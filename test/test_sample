@@ -1,0 +1,5 @@
+#!/bin/bash
+
+make -C ..
+../AES < aes_sample.in >> output
+diff -qs output aes_sample.ans
